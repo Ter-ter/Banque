@@ -12,7 +12,7 @@ pipeline {
                 // Get some code from a GitHub repository
                 sh "pwd"
                 sh "sshpass -v -p \"root\" ssh -v -o \"StrictHostKeyChecking=no\" root@172.20.10.3 'rm -rvf /mnt/www/html/test/'"
-                sh "git clone https://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@github.com/Ter-ter/Hello-jenkins.git temp"
+                sh "git clone https://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@github.com/Ter-ter/Hello-jenkins.git temp"
                 sh "mv -n temp/* ."
                 sh "rm -rf temp"
 
